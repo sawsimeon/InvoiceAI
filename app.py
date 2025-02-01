@@ -148,10 +148,10 @@ if uploaded_file is not None:
     tax_df = create_tax_dataframe(extracted_text)
     
     # Display the extracted data in DataFrames
-    st.write("Accounts Payable")
+    st.subheader("Accounts Payable")
     st.write(invoice_df)
-    st.write("Tax")
+    st.subheader("Tax")
     st.write(tax_df)
-    st.write("Customer List")
+    st.subheader("Customer List")
     st.write(client_df)
 
